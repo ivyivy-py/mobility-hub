@@ -1,0 +1,115 @@
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --card-background: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    text-shadow: 0 2px 4px var(--shadow-color);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+#diagnosis-section,
+#recommendation-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+mobility-test,
+exercise-recommendation {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    padding: 1.5rem;
+    transition: transform 0.2s;
+}
+
+mobility-test:hover,
+exercise-recommendation:hover {
+    transform: translateY(-5px);
+}
+
+mobility-test img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+mobility-test p {
+    margin-top: 1rem;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.options button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.options button:hover {
+    background-color: #0056b3;
+}
+
+exercise-recommendation h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+exercise-recommendation iframe {
+    width: 100%;
+    border-radius: 5px;
+}
+
+exercise-recommendation a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+exercise-recommendation a:hover {
+    text-decoration: underline;
+}
